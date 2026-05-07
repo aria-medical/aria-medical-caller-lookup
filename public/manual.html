@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aria Medical Caller Lookup Manual</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap');
+
+      :root {
+        color-scheme: dark;
+        --primary: #bc7f61;
+        --surface: #191c21;
+        --surface-soft: #22262d;
+        --text-primary: #ffffff;
+        --text-secondary: #a1a1aa;
+        --border: #57534e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: 'Geist', system-ui, sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(188, 127, 97, 0.35), transparent 36%),
+          #bc7f61;
+        color: var(--text-primary);
+      }
+
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 80px 24px;
+      }
+
+      .panel {
+        background: rgba(25, 28, 33, 0.94);
+        border: 1px solid rgba(87, 83, 78, 0.9);
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 32px 80px rgba(0, 0, 0, 0.22);
+      }
+
+      .eyebrow {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.82rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--primary);
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        line-height: 1.05;
+      }
+
+      h1 {
+        font-size: clamp(2.75rem, 7vw, 4.8rem);
+        margin-top: 14px;
+      }
+
+      p,
+      li {
+        color: var(--text-secondary);
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      .intro {
+        margin: 18px 0 0;
+        max-width: 52rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 32px;
+      }
+
+      .card {
+        padding: 24px;
+        border-radius: 18px;
+        background: var(--surface-soft);
+        border: 1px solid rgba(87, 83, 78, 0.7);
+      }
+
+      .card h2 {
+        font-size: 1.35rem;
+        margin-top: 10px;
+      }
+
+      ul {
+        padding-left: 18px;
+        margin: 14px 0 0;
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 24px;
+        color: var(--text-primary);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          padding: 48px 16px;
+        }
+
+        .panel {
+          padding: 24px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <p class="eyebrow">Aria Medical Caller Lookup</p>
+        <h1>User manual</h1>
+        <p class="intro">
+          Use this guide to install the desktop application, prepare organization data,
+          and support staff during day-to-day caller lookup operations.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <p class="eyebrow">Install</p>
+            <h2>Getting started</h2>
+            <ul>
+              <li>Download the newest production build from the latest release page.</li>
+              <li>Install the application using your normal desktop deployment process.</li>
+              <li>Confirm that your organization directory or import source is available.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="eyebrow">Daily use</p>
+            <h2>Lookup workflow</h2>
+            <ul>
+              <li>Launch the app and load the current organization contact dataset.</li>
+              <li>Search by organization, department, or staff member to find contact details.</li>
+              <li>Share verified contact information with the caller or internal care team.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="eyebrow">Support</p>
+            <h2>Troubleshooting</h2>
+            <ul>
+              <li>Update to the latest release when users report outdated data or missing fixes.</li>
+              <li>Verify data imports and source file access if lookups return incomplete results.</li>
+              <li>Escalate persistent application errors through your normal Aria Medical support path.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="eyebrow">Operations</p>
+            <h2>Deployment checklist</h2>
+            <ul>
+              <li>Confirm desktop prerequisites on every workstation before rollout.</li>
+              <li>Distribute the manual link alongside the application installer.</li>
+              <li>Review staff onboarding steps after every published release.</li>
+            </ul>
+          </article>
+        </div>
+
+        <a class="back-link" href="./">← Back to launch page</a>
+      </section>
+    </main>
+  </body>
+</html>
