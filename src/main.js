@@ -18,7 +18,7 @@ document.querySelector('#app').innerHTML = `
       </a>
 
       <nav class="top-actions" aria-label="Primary">
-        <a class="text-link" href="/manual.html">Manual</a>
+        <a class="text-link" href="./manual.html">Manual</a>
         <a class="primary-link" href="${releaseUrl}" target="_blank" rel="noreferrer">
           Download app
         </a>
@@ -40,7 +40,7 @@ document.querySelector('#app').innerHTML = `
             <a class="button button-primary" href="${releaseUrl}" target="_blank" rel="noreferrer">
               Download latest version
             </a>
-            <a class="button button-secondary" href="/manual.html">
+            <a class="button button-secondary" href="./manual.html">
               Read the manual
             </a>
           </div>
@@ -116,7 +116,7 @@ document.querySelector('#app').innerHTML = `
             Read the hosted manual for installation steps, daily workflow guidance, and
             troubleshooting notes before deployment.
           </p>
-          <a class="inline-action" href="/manual.html">Open manual</a>
+          <a class="inline-action" href="./manual.html">Open manual</a>
         </article>
       </section>
     </main>
